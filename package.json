@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@next/font": "^13.1.1",
+    "@react-three/drei": "^9.51.21",
+    "@react-three/fiber": "^8.10.0",
     "next": "latest",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "three": "^0.148.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.0",
@@ -22,6 +25,7 @@
     "@testing-library/user-event": "14.2.0",
     "@types/react": "18.0.9",
     "@types/testing-library__jest-dom": "5.14.5",
+    "@types/three": "^0.148.0",
     "autoprefixer": "^10.4.13",
     "husky": "^8.0.3",
     "jest": "28.1.0",
