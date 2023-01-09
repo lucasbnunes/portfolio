@@ -3,13 +3,13 @@ import React from 'react'
 
 export function ContactBar() {
   return (
-    <aside className="flex flex-col justify-center gap-6 px-6">
+    <nav className="bg-white flex gap-6 px-6 py-6 justify-end lg:flex-col lg:justify-center sticky top-0 left-0 lg:fixed lg:h-screen z-50">
       <a href="https://linkedin.com/in/lucasbnunes">
-        <LinkedinFill />
+        <LinkedinFill size="2rem" />
       </a>
       <a href="https://github.com/lucasbnunes">
-        <GithubFill />
+        <GithubFill size="2rem" />
       </a>
-    </aside>
+    </nav>
   )
 }
