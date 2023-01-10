@@ -1,3 +1,4 @@
+import { Button } from "./Button"
 import { WordSphere } from "./WordSphere"
 
 export function AboutSection() {
@@ -16,7 +17,7 @@ export function AboutSection() {
         <p className="max-w-prose mt-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet tempora nobis dolorem modi at ullam consequuntur suscipit deleniti provident repudiandae? Pariatur fuga id vero eligendi.
         </p>
 
-        <button className="border-2 border-phantom-900 rounded-sm font-semibold px-6 py-2 mt-7">Ver currículo</button>
+        <Button className="mt-7">Ver currículo</Button>
       </div>
     </section>
   )
