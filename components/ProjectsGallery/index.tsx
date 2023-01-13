@@ -6,7 +6,7 @@ export default function ProjectsGallery() {
       image: 'https://picsum.photos/800/450',
       title: "Lorem Ipsum",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt felis vitae gravida placerat. Quisque tincidunt consectetur blandit. ',
-      tags: ['React', 'React Native', 'Pocketbase', 'Figma', 'Typescript', 'ChakraUI', 'Expo', 'React Native', 'Pocketbase', 'Figma', 'Typescript', 'ChakraUI', 'Expo'],
+      tags: ['React', 'React Native', 'Pocketbase', 'Figma', 'Typescript', 'ChakraUI', 'Expo', 'CSS', 'HTML', 'JavaScript'],
       repo: 'https://github.com/',
       url: 'https://github.com/',
       id: '1',
