@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-phantom-900;
+  @apply bg-white text-phantom-900 min-h-screen;
 }

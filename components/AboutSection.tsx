@@ -5,7 +5,7 @@ export function AboutSection() {
   const words = ['React', 'Next.js', 'Typescript', 'Javascript', 'Material UI', 'TailwindCSS', 'Chakra UI', 'Testes', 'Cypress', 'Jest', 'HTML', 'CSS', 'Figma', 'Acessibilidade', 'Git']
 
   return (
-    <section className="h-full flex items-center gap-10 justify-around flex-wrap-reverse max-w-[1920px] mx-auto p-6">
+    <section className="min-h-screen flex items-center gap-10 justify-around flex-wrap-reverse max-w-[1920px] mx-auto p-6">
       <div className="min-w-[24rem] min-h-[24rem]  md:max-w-[48rem] md:max-h-[48rem] aspect-square rounded-full mx-auto md:mx-0 flex-1">
         <WordSphere words={words} count={5} />
       </div>
