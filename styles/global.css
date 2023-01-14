@@ -7,5 +7,5 @@ body {
 }
 
 * {
-  @apply outline-phantom-900;
+  @apply outline-rose-500;
 }
