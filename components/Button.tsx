@@ -15,7 +15,7 @@ interface ButtonProps {
 }
 
 export function Button({ children, href, onClick, variant = 'outlined', className, openLinkInNewTab }: ButtonProps) {
-  const baseClasses = 'rounded-sm font-semibold px-6 py-2 whitespace-nowrap'
+  const baseClasses = 'rounded-sm font-semibold px-6 py-2 whitespace-nowrap outline-offset-2 focus-visible:opacity-75'
 
   const style: Variants = {
     outlined: 'border-2 border-phantom-900',

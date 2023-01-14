@@ -5,3 +5,7 @@
 body {
   @apply bg-white text-phantom-900 min-h-screen;
 }
+
+* {
+  @apply outline-phantom-900;
+}
