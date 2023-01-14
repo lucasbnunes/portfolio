@@ -7,7 +7,7 @@ interface HorizontalItemProps extends Project { }
 export function HorizontalItem({ image, title, description, tags, repo, url }: HorizontalItemProps) {
   return (
     <li className='flex gap-6 [&+li]:mt-24'>
-      <img src={image} alt="" className='rounded-[4px] object-fill aspect-video max-w-[420px] max-h-[236px] flex' />
+      <img src={image} alt="" className='rounded-[4px] object-fill aspect-video max-w-[432px] max-h-[243px] shadow-md' />
 
       <div className='py-3 flex flex-col justify-between overflow-hidden flex-1'>
         <div>
