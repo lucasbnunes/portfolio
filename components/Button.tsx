@@ -23,14 +23,16 @@ export function Button({ children, href, onClick, variant = 'outlined', classNam
   }
 
   if (href) {
-    <a
-      className={`${baseClasses} ${style[variant]} ${className || ''}`}
-      href={href}
-      target={openLinkInNewTab ? '_blank' : undefined}
-      rel={openLinkInNewTab ? 'noopener' : undefined}
-    >
-      {children}
-    </a>
+    return (
+      <a
+        className={`${baseClasses} ${style[variant]} ${className || ''}`}
+        href={href}
+        target={openLinkInNewTab ? '_blank' : undefined}
+        rel={openLinkInNewTab ? 'noopener' : undefined}
+      >
+        {children}
+      </a>
+    )
   }
 
   return (
