@@ -4,46 +4,23 @@ import tailwindConfig from '../../../tailwind.config.js'
 import { Project } from '../Project'
 import { HorizontalItem } from './HorizontalItem';
 import { VerticalItem } from './VerticalItem';
+import { useWindowSize } from 'hooks/useWindowSize';
 
-interface ResponsiveItemProps extends Project { }
+interface ResponsiveItemProps {
+  project: Project
+}
 
-export default function ResponsiveItem(props: ResponsiveItemProps) {
+export default function ResponsiveItem({ project }: ResponsiveItemProps) {
   const fullConfig = resolveConfig(tailwindConfig) as any
   const screen = useWindowSize()
 
   if (screen.width > parseInt(fullConfig.theme.screens.md)) {
     return (
-      <HorizontalItem {...props} />
+      <HorizontalItem project={project} />
     )
   }
 
   return (
-    <VerticalItem {...props} />
+    <VerticalItem project={project} />
   )
-}
-
-type WindowDimensions = {
-  width: number,
-  height: number,
-}
-
-function useWindowSize() {
-  const [windowSize, setWindowSize] = React.useState<WindowDimensions>({} as WindowDimensions);
-
-  React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener("resize", handleResize);
-      handleResize();
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []);
-
-  function handleResize() {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  }
-
-  return windowSize;
 }
