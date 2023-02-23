@@ -27,6 +27,7 @@ export default function Home({ about, projects }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const TWO_MINUTES = 60 * 2
   const aboutMeQuery = "*[_type == 'aboutMe'][0]"
   const projectsQuery = "*[_type == 'project']{..., 'image': image.asset->url}"
   const { about, projects }: HomeProps = await client.fetch(`{'about': ${aboutMeQuery},'projects': ${projectsQuery}}`)
@@ -35,6 +36,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     props: {
       about,
       projects
-    }
+    },
+    revalidate: TWO_MINUTES
   }
 }
