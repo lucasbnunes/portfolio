@@ -21,6 +21,20 @@ module.exports = {
           900: '#313434',
         },
       },
+      animation: {
+        'fade-in': 'fadeIn 600ms ease-in both',
+        'stretch-vertical': 'stretchHeight 2000ms ease-in-out both',
+      },
+      keyframes: (theme) => ({
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        stretchHeight: {
+          '0%': { height: 0 },
+          '100%': { height: '100%' },
+        },
+      }),
     },
   },
   plugins: [

@@ -1,6 +1,7 @@
 import { AboutData, AboutSection } from "@/components/AboutSection";
 import { Project } from "@/components/ProjectsGallery/Project";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { WorkExperienceSection } from "@/components/WorkExperienceSection";
 import { useContactBarContext } from "contexts/ContactBarContext";
 import client from "lib/sanity";
 import { GetStaticProps } from "next";
@@ -21,6 +22,9 @@ export default function Home({ about, projects }: HomeProps) {
   return (
     <>
       <AboutSection data={about} />
+
+      <WorkExperienceSection />
+
       <ProjectsSection projects={projects} />
     </>
   )
