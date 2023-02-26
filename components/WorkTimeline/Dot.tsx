@@ -3,7 +3,7 @@ interface DotProps {
 }
 
 const ALIGNMENT_MAP = {
-  left: "-left-8 lg:left-auto lg:right-3.5",
+  left: "-left-8 lg:left-auto lg:-right-2.5",
   right: "-left-8 lg:-left-2.5"
 }
 

@@ -7,7 +7,7 @@ interface WorkExperienceItem {
 }
 
 const CONTAINER_STYLES = {
-  left: "pr-12",
+  left: "lg:ml-0 pr-12",
   right: "lg:ml-auto lg:pl-12"
 }
 
