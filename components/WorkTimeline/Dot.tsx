@@ -8,5 +8,5 @@ const ALIGNMENT_MAP = {
 }
 
 export function Dot({ align }: DotProps) {
-  return <div className={`absolute top-1.5 w-5 h-5 bg-phantom-900 rounded-full border-4 border-white ${ALIGNMENT_MAP[align]}`} />
+  return <div className={`absolute top-1.5 w-5 h-5 bg-phantom-900 rounded-md border-4 border-white ${ALIGNMENT_MAP[align]}`} />
 }
