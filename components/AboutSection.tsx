@@ -17,10 +17,7 @@ interface AboutSectionProps {
 
 export function AboutSection({ data }: AboutSectionProps) {
   return (
-    <section className="min-h-screen flex items-center gap-10 justify-around flex-wrap-reverse max-w-[1920px] mx-auto p-6">
-      <div className="min-w-[24rem] min-h-[24rem]  md:max-w-[48rem] md:max-h-[48rem] aspect-square rounded-full mx-auto md:mx-0 flex-1">
-        <WordSphere words={data.skills} count={5} />
-      </div>
+    <section className="min-h-screen flex items-center gap-10 justify-around flex-wrap max-w-[1920px] mx-auto p-6">
 
       <div>
         <h1 className="font-semibold text-6xl">{data.name}</h1>
@@ -30,6 +27,13 @@ export function AboutSection({ data }: AboutSectionProps) {
 
         <Button className="mt-7">Ver currículo</Button>
       </div>
+
+      <div className="min-w-[24rem] min-h-[24rem] md:max-w-[48rem] md:max-h-[48rem] aspect-square rounded-full mx-auto md:mx-0 flex-1 relative">
+        <div className="md:hidden h-full w-20 bg-transparent absolute left-0 z-50" />
+        <WordSphere words={data.skills} count={5} />
+        <div className="md:hidden h-full w-20 bg-transparent absolute top-0 right-0 z-50" />
+      </div>
+
     </section>
   )
-}
+} 
