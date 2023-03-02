@@ -1,4 +1,4 @@
-import { Dot } from "./Dot"
+import { Marker } from "./Marker"
 
 interface WorkExperienceItem {
   align: "left" | "right",
@@ -7,19 +7,19 @@ interface WorkExperienceItem {
 }
 
 const CONTAINER_STYLES = {
-  left: "lg:ml-0 pr-12",
+  left: "lg:ml-0 lg:pr-12",
   right: "lg:ml-auto lg:pl-12"
 }
 
 const CONTENT_STYLES = {
-  left: "lg:ml-auto",
-  right: "lg:mr-auto"
+  left: "ml-4 lg:ml-auto",
+  right: "ml-4 lg:ml-0 lg:mr-auto"
 }
 
 export function WorkExperienceItem({ align, delay, isVisible }: WorkExperienceItem) {
   return (
     <div className={`ml-6 lg:w-1/2 relative ${CONTAINER_STYLES[align]} ${isVisible ? "animate-fade-in" : ""}`} style={{ animationDelay: delay + "ms" }} >
-      <Dot align={align} />
+      <Marker align={align} />
       <div className={`max-w-prose lg:max-w-md ${CONTENT_STYLES[align]}`} >
         <h4 className="font-semibold text-2xl">Lorem ipsum dolor.</h4>
         <h5 className="font-medium text-lg text-phantom-600 mb-2 inline-block">Lorem</h5> <span className="text-phantom-600">(01/2022 - Atual)</span>
