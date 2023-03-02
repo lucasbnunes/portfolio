@@ -9,8 +9,8 @@ interface VerticalItemProps {
 export function VerticalItem({ project }: VerticalItemProps) {
   return (
     <li className='flex flex-col [&+li]:mt-16'>
-      <div className='relative rounded-[4px] max-w-full object-fill aspect-video after:w-full after:h-full after:rounded-[inherit] after:absolute after:top-0 after:block after:bg-gradient-to-t after:from-[#00000088] after:to-[#ffffff44]'>
-        <img src={project.image} alt="" className='rounded-[inherit] max-h-full max-w-full' />
+      <div className='relative rounded-[4px] max-w-full after:w-full after:h-full after:rounded-[inherit] after:absolute after:top-0 after:block after:bg-gradient-to-t after:from-[#00000088] after:to-[#ffffff44]'>
+        <img src={project.image} alt="" className='rounded-[inherit] max-h-full max-w-full object-fill aspect-video' />
         <h4 className='font-medium text-2xl mt-2 absolute bottom-4 left-6 text-white z-10'>{project.title}</h4>
       </div>
 
