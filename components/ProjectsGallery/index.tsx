@@ -7,7 +7,7 @@ interface ProjectsGalleryProps {
 
 export default function ProjectsGallery({ projects }: ProjectsGalleryProps) {
   return (
-    <ul className='max-w-screen-xl mt-24'>
+    <ul className='max-w-screen-xl'>
       {projects.map((project) => <ResponsiveItem key={project._id} project={project} />)}
     </ul>
   )

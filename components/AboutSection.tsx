@@ -17,7 +17,7 @@ interface AboutSectionProps {
 
 export function AboutSection({ data }: AboutSectionProps) {
   return (
-    <section className="min-h-screen flex items-center gap-10 justify-around flex-wrap max-w-[1920px] mx-auto p-6">
+    <section className="min-h-screen flex items-center gap-20 justify-around flex-wrap max-w-[1920px] mx-auto p-6">
 
       <div>
         <h1 className="font-semibold text-6xl">{data.name}</h1>
