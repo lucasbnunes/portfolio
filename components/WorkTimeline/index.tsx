@@ -13,7 +13,7 @@ export function WorkTimeline({ experiences }: WorkTimelineProps) {
   return (
     <div ref={elementRef} className={`mt-16 py-12 relative flex flex-col gap-14 lg:gap-24 ${isVisible ? "opacity-1" : "opacity-0"}`}>
       <Line isVisible={isVisible} />
-      {experiences.map((workXp, index) => <WorkExperienceItem workExperience={workXp} align={index % 2 === 0 ? 'left' : 'right'} delay={index * 600} isVisible={isVisible} />)}
+      {experiences.map((workXp, index) => <WorkExperienceItem key={workXp._id} workExperience={workXp} align={index % 2 === 0 ? 'left' : 'right'} delay={index * 600} isVisible={isVisible} />)}
 
       {/*<WorkExperienceItem align="right" delay={600} isVisible={isVisible} />*/}
     </div>
