@@ -42,5 +42,5 @@ export function Word({ children, ...props }: WordProps) {
     ref.current.material.color.set(fullConfig.theme?.colors?.phantom[900])
   })
 
-  return <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')} {...props} {...fontProps} children={children as ReactNode} />
+  return <Text ref={ref} onPointerOver={over} onPointerOut={out} {...props} {...fontProps} children={children as ReactNode} />
 }
