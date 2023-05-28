@@ -25,7 +25,6 @@ export function AboutSection({ data }: AboutSectionProps) {
 
         <p className="max-w-prose mt-6">{data.summary}</p>
 
-        <Button className="mt-7">Ver currículo</Button>
       </div>
 
       <div className="min-w-[24rem] min-h-[24rem] md:max-w-[48rem] md:max-h-[48rem] aspect-square rounded-full mx-auto md:mx-0 flex-1 relative">
